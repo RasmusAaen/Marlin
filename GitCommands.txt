@@ -7,10 +7,13 @@ git checkout 2.0.x
 git rebase upstream/2.0.x
 
 #Create branch
-git checkout -b "SKR_Mini_E3"
+git checkout -b SKR_Mini_E3
 
-#Merge changes in 2.0.x into config branch
-git checkout "SKR_Mini_E3"
+#Push branch to Origin
+git push -u origin SKR_Mini_E3
+
+#Merge changes in 2.0.x into SKR_Mini_E3 config branch
+git checkout SKR_Mini_E3
 git merge 2.0.x
 
 
