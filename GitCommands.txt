@@ -1,0 +1,16 @@
+#Add upstream reference
+git remote add upstream https://github.com/MarlinFirmware/Marlin.git
+
+#Update from upstream
+git fetch upstream
+git checkout 2.0.x
+git rebase upstream/2.0.x
+
+#Create branch
+git checkout -b "SKR_Mini_E3"
+
+#Merge changes in 2.0.x into config branch
+git checkout "SKR_Mini_E3"
+git merge 2.0.x
+
+
