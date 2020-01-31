@@ -1,3 +1,6 @@
+#Change user email to be different from global
+git config user.email 'rasmus@aaen.net'
+
 #Add upstream reference
 git remote add upstream https://github.com/MarlinFirmware/Marlin.git
 
@@ -6,14 +9,25 @@ git fetch upstream
 git checkout 2.0.x
 git rebase upstream/2.0.x
 
-#Create branch
+#Create SKR_Mini_E3 branch
 git checkout -b SKR_Mini_E3
 
-#Push branch to Origin
+#Push branch to origin (GitHub)
 git push -u origin SKR_Mini_E3
 
 #Merge changes in 2.0.x into SKR_Mini_E3 config branch
 git checkout SKR_Mini_E3
 git merge 2.0.x
 
+#Stage all changes
+git add .
+
+#Stage changes in specific file
+git add <filename>
+
+#Commit changes
+git commit -m "message"
+
+#Push changes to origin
+git push
 
