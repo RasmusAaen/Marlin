@@ -8,6 +8,7 @@ git remote add upstream https://github.com/MarlinFirmware/Marlin.git
 git fetch upstream
 git checkout 2.0.x
 git rebase upstream/2.0.x
+git push origin 2.0.x
 
 #Create SKR_Mini_E3 branch
 git checkout -b SKR_Mini_E3
