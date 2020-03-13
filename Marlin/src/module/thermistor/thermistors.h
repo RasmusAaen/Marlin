@@ -109,6 +109,9 @@
 #if ANY_THERMISTOR_IS(21) // Pt100 with INA826 amp with 3.3v excitation based on "Pt100 with INA826 amp on Ultimaker v2.0 electronics"
   #include "thermistor_21.h"
 #endif
+#if ANY_THERMISTOR_IS(40) // 200K thermistor in Copymaker3D hotend
+  #include "thermistor_40.h"
+#endif
 #if ANY_THERMISTOR_IS(51) // beta25 = 4092 K, R25 = 100 kOhm, Pull-up = 1 kOhm, "EPCOS"
   #include "thermistor_51.h"
 #endif
