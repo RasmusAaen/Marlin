@@ -363,6 +363,7 @@
  *   331 : (3.3V scaled thermistor 1 table for MEGA)
  *   332 : (3.3V scaled thermistor 1 table for DUE)
  *     2 : 200k thermistor - ATC Semitec 204GT-2 (4.7k pullup)
+ *   202 : 200k thermistor - Compymaster 3D
  *     3 : Mendel-parts thermistor (4.7k pullup)
  *     4 : 10k thermistor !! do not use it for a hotend. It gives bad resolution at high temp. !!
  *     5 : 100K thermistor - ATC Semitec 104GT-2/104NT-4-R025H42G (Used in ParCan & J-Head) (4.7k pullup)
@@ -407,7 +408,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 40
+#define TEMP_SENSOR_0 202
 
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0

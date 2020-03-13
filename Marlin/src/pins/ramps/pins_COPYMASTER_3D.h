@@ -25,7 +25,6 @@
 
 #define Z_STEP_PIN        47
 #define FIL_RUNOUT_PIN    15
-//#define Z_MIN_PROBE_PIN   32
 #define SD_DETECT_PIN     66
 
 //
