@@ -32,3 +32,12 @@ git commit -m "message"
 #Push changes to origin
 git push
 
+#Delete local branch
+git branch -d <branch>
+
+#Force delete local branch
+git branch -D <branch>
+
+#Delete remote branch
+git push origin --delete <branch>
+
