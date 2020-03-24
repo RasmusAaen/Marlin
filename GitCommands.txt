@@ -41,3 +41,14 @@ git branch -D <branch>
 #Delete remote branch
 git push origin --delete <branch>
 
+#Create feature banch from bugfix
+git fetch upstream
+git checkout bugfix-2.0.x
+git rebase upstream/bugfix-2.0.x
+git push origin bugfix-2.0.x
+git checkout -b <branchname>
+<make changes>
+git push origin <branchname>
+
+
+
