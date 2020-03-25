@@ -1,30 +1,8 @@
-/**
- * Marlin 3D Printer Firmware
- * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
- *
- * Based on Sprinter and grbl.
- * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- */
-#pragma once
-
 //
 // Unknown 200K thermistor on a Copymaster 3D hotend
-// Temptable copied from original firmware 
+// Temptable sent from dealer technologyoutlet.co.uk
 //
+
 const short temptable_202[][2] PROGMEM = {
   { OV(   1), 864 },
   { OV(  35), 300 },
@@ -88,5 +66,4 @@ const short temptable_202[][2] PROGMEM = {
   { OV(1014),  10 },
   { OV(1016),   5 },
   { OV(1018),   0 }
-
 };
