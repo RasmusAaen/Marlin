@@ -99,7 +99,7 @@
 #define USB_CONNECT_PIN                     PC13
 #define USB_CONNECT_INVERTING false
 
-#define SD_DETECT_PIN                       PC4
+#define SD_DETECT_PIN                       -1 // was PC4 - must be -1 for SD card extender to work
 
 /**
  *                 _____
