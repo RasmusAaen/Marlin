@@ -226,7 +226,7 @@
 #endif
 
 #if SD_CONNECTION_IS(ONBOARD)
-  #define SD_DETECT_PIN                     PC4
+  #define SD_DETECT_PIN                     -1 //Changed from PC4 to enable SD extender cable
 #endif
 
 #if BOTH(TOUCH_UI_FTDI_EVE, LCD_FYSETC_TFT81050) && SD_CONNECTION_IS(LCD)
