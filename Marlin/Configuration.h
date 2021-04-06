@@ -502,7 +502,7 @@
     // Creality Ender-3 with Hemera extruder
     #define DEFAULT_Kp 27.02
     #define DEFAULT_Ki 2.54
-    #define DEFAULT_Kd 71.94 
+    #define DEFAULT_Kd 71.94
   #endif
 #endif // PIDTEMP
 
@@ -747,7 +747,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 400 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 398 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -992,7 +992,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 64, 0, -0.75 }
+#define NOZZLE_TO_PROBE_OFFSET { 64, 0, -0.70 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
